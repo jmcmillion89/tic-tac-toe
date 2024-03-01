@@ -1,0 +1,27 @@
+body {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.gameboard {
+    border: solid 1px black;
+    display: grid;
+    width: 300px;
+    height: 300px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.gameboard > * {
+    border: solid 1px black;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.input {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
