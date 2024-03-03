@@ -12,7 +12,7 @@ restartButton.addEventListener('click', () => {
 const displayController = (() => {
     const messageDiv = document.querySelector('#message')
     function renderMessage(message) {
-        messageDiv.innerHTML = message
+        messageDiv.innerText = message
     }
     return {renderMessage}
 })();
