@@ -4,8 +4,8 @@ flex-direction: column;
 align-items: center;
 }
 
-.gameboard {
-    border: solid 1px black;
+#gameboard {
+    /* border: solid 2px black; */
     display: grid;
     width: 300px;
     height: 300px;
@@ -13,10 +13,27 @@ align-items: center;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.gameboard > * {
-    border: solid 1px black;
+#gameboard > * {
     font-size: 5rem;
     text-align: center;
+}
+
+#square-0, #square-3 {
+    border-bottom: solid 2px black;
+    border-right: solid 2px black;
+}
+
+#square-1, #square-4 {
+    border-bottom: solid 2px black;
+    border-right: solid 2px black;
+}
+
+#square-2, #square-5 {
+    border-bottom: solid 2px black;
+}
+
+#square-6, #square-7 {
+    border-right: solid 2px black;
 }
 
 .input {
